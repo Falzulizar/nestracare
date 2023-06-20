@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengaduan - Nestra Care</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/Falzulizar/pplg1/main/tj.png" type="image/x-icon">
+</head>
+
+<body class="text-light">
+<nav class="navbar navbar-expand-lg glass">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/Falzulizar/pplg1/main/tj.png" style="height: 30px;"> Nestra Care</a>
+    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pengaduan.html">Pengaduan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section id="report" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Pengaduan</h2>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="class" class="form-label">Kelas</label>
+                            <select class="form-select" id="class" name="class" required>
+                                <option value="" selected disabled>Pilih Kelas</option>
+                                <option value="Kelas 1">Kelas 1</option>
+                                <option value="Kelas 2">Kelas 2</option>
+                                <option value="Kelas 3">Kelas 3</option>
+                                <!-- Tambahkan opsi kelas yang sesuai dengan konteks -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="complaint-type" class="form-label">Jenis Pengaduan</label>
+                            <select class="form-select" id="complaint-type" name="complaint-type" required>
+                                <option value="" selected disabled>Pilih Jenis Pengaduan</option>
+                                <option value="Perundungan/Bullying">Perundungan / Bullying</option>
+                                <option value="Saran atau Kritik untuk Sekolah">Saran atau Kritik untuk Sekolah</option>
+                                <option value="Keluhan Lainnya">Keluhan Lainnya</option>
+                                <!-- Tambahkan opsi pengaduan yang sesuai dengan konteks -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="complaint-description" class="form-label">Deskripsi Pengaduan</label>
+                            <textarea class="form-control" id="complaint-description" name="complaint-description"
+                                rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark" name="submit">Kirim Pengaduan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Nestra Care. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
